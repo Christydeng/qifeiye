@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/mycss/public.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my-js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+<!--		<div><input type="button" id="prev" value="Prev" /></div>
+		<img src="img/example-img/a.png" alt="" class="thumb"/>
+		<img src="img/example-img/b.png" alt="" class="thumb"/>
+		<img src="img/example-img/c.png" alt="" class="thumb"/>
+		<div><input type="button" id="next" value="Next" /></div>
+		<style type="text/css">
+			.thumb {width: 20%; float: left;}
+		</style>
+		<script type="text/javascript">
+			var prev = document.getElementById("prev");
+			var next = document.getElementById("next");
+			var pic = document.getElementsByClassName("thumb");
+			var imgArray = ["example-img/a.png","example-img/b.png","example-img/c.png","example-img/d.png","example-img/e.png","example-img/f.png","example-img/g.png"];
+			var left = 0;
+			function nextImg () {
+				i++;
+				if (i+2 > imgArray.length - 1) {
+					i = 0;
+				}
+				pic[0].src = "img/" + imgArray[i];
+				console.log(pic[0].src)
+				pic[1].src = "img/" + imgArray[i+1];
+				console.log(pic[1].src)
+				pic[2].src = "img/" + imgArray[i+2];
+				console.log(pic[2].src)
+				console.log("******************************")
+			}
+			function prevImg () {
+				i--;
+				if (i - 2 < 0) {
+					i = imgArray.length - 1;
+				}
+				pic[0].src = "img/" + imgArray[i-2];
+				console.log(pic[0].src)
+				pic[1].src = "img/" + imgArray[i-1];
+				console.log(pic[1].src)
+				pic[2].src = "img/" + imgArray[i];
+				console.log(pic[2].src)
+				console.log("**************************************************")
+			}
+			
+			next.onclick = function () {
+				nextImg();
+			}
+			prev.onclick = function () {
+				prevImg();
+			}
+		setInterval(nextImg,3000);
+		</script>-->
+		<style type="text/css">
+			.carousel_buttom_box {
+				width: 100%;
+				height: 300px;
+				float: left;
+				border-top: #e2e2e2 1px solid;
+			}
+			.left_icon_box, .right_icon_box {
+				text-align: center;
+				width: 3%;
+				height: 40px;
+				margin-top: 70px;
+				background: #cecece;
+			}
+			
+			.left_icon, .right_icon {
+				width: 100%;
+				height: 100%;
+				background: #cecece;
+				padding-top: 10px;
+				cursor: pointer;
+				color: white;
+			}
+			
+			.temp {
+				overflow: hidden;
+				width: 94%;
+				height: 150px;
+				float: left;
+			}
+			.temp>.temp_ul {
+				width: 3150px; 
+				position: relative;
+				transition: left 1s;
+				left: 0;
+			}
+			
+			.temp>.temp_ul>.carousel_li {
+				width: 1050px;
+				float: left;
+			}
+		</style>
+		<div class="container">
+			<!--<div class="row">-->
+				<div style="text-align: center;"><p><h1>客户反馈</h1></p></div>
+				<div class="carousel_buttom_box ptop_distance50 mtop_distance30">
+					<div class="left_icon_box" style="float: left;">
+						<a class="left_icon" id="prev_li">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+					</div>
+					<div class="temp">
+						<ul class="temp_ul">
+							<li class="carousel_li">
+								<div style="width: 20%; height: 150px;float: left; padding-left: 40px;">
+									<img src="img/index-img/carousel11.png"/>
+								</div>
+								<div style="width: 75%; height: 150px;float: left; padding-top: 15px;">
+									<p>选用起飞页一是因为他们就在我们隔壁，二是他们的价格确实很吸引人。在试用了3个月后，我们果断的购买了5年的套餐。起飞页不仅提供了一个美观大方的网站，也提供了稳定的后期服务。我们不断的在为客户介绍起飞页。</p>
+									<h4 style=" float: right; padding-right: 50px;">苏州金蝶软件</h4>
+								</div>
+							</li>
+							<li class="carousel_li">
+								<div style="width: 20%; height: 150px;float: left; padding-left: 40px;">
+									<img src="img/index-img/carousel12.png"/>
+								</div>
+								<div style="width: 75%; height: 150px;float: left; padding-top: 15px;">
+									<p>如果和WIX, Weebly或者Squarespace进行比较，我觉得起飞页更像是一个综合体。它和Squarespace一样能做出很多华丽的效果，又像weebly一样能很快的搭建博客，又和wix一样容易上手，而且还是响应式的。总之，起飞页是一个很适合我的平台。</p>
+									<h4 style=" float: right; padding-right: 50px;">北欧维森商旅</h4>
+								</div>
+							</li>
+							<li class="carousel_li">
+								<div style="width: 20%; height: 150px;float: left; padding-left: 40px;">
+									<img src="img/index-img/carousel13.png"/>
+								</div>
+								<div style="width: 75%; height: 150px;float: left; padding-top: 15px;">
+									<p>选用起飞页一是因为他们就在我们隔壁，二是他们的价格确实很吸引人。在试用了3个月后，我们果断的购买了5年的套餐。起飞页不仅提供了一个美观大方的网站，也提供了稳定的后期服务。我们不断的在为客户介绍起飞页。</p>
+									<h4 style=" float: right; padding-right: 50px;">苏州金蝶软件</h4>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="right_icon_box" style="float: right;">
+						<a class="right_icon" id="next_li">
+							<span class="glyphicon glyphicon-chevron-right" id="next_li"></span>
+						</a>
+					</div>
+				</div>
+			<!--</div>-->
+		</div>
+		<script type="text/javascript">
+			var prev_li = $("#prev_li");
+			var next_li = $("#next_li");
+			var carousel_li = $(".carousel_li");
+			var left = 0;
+			function next_liImg () {
+				left = (left-1050)%3150;
+				$(".temp_ul").css("left", left+"px");
+			}
+			
+			function prev_liImg () {
+				if(left == 0){
+					left = -2100;
+				}else{
+					left = (left+1050)%3150;
+				}
+				$(".temp_ul").css("left", left+"px");
+			}
+			
+			prev_li.click(function () {
+				clearInterval(interval);
+				prev_liImg();
+				interval = setInterval(next_liImg,3000);
+			})
+			next_li.click( function () {
+				clearInterval(interval);
+				next_liImg();
+				interval = setInterval(next_liImg,3000);
+			})
+			var interval = setInterval(next_liImg,3000);
+		</script>
+	</body>
+
+</html>

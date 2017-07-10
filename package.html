@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>套餐</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/mycss/public.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my-js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div style="position: relative;">
+			<div class="header_top" id="toptop">
+				<div class="logo_div col-lg-1 col-xs-3">
+					<a class="logo" href="index.html">
+						<img src="img/icons/logo.png" />
+					</a>
+				</div>
+				<div class="btn-group col-xs-1" id="show_hide_bar">
+					<a class="btn btn-default" style="background: #383838; border: 0;"><span class="glyphicon glyphicon-align-justify" style="color: white;"></span></a>
+				</div>
+				<div class="header_nav col-lg-10">
+					<div class="header_left">
+						<ul>
+							<li>
+								<a class="active" href="index.html">首页 </a>
+							</li>
+							<li>
+								<a href="model.html" style="">模板 </a>
+							</li>
+							<li>
+								<a href="package.html" style="">套餐 </a>
+							</li>
+							<li>
+								<a href="example.html" style="">案例</a>
+							</li>
+							<li id="doc">
+								<a>文档</a>
+							</li>
+							<li id="about">
+								<a>关于</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header_right">
+						<ul class="">
+							<li>
+								<a href="login.html">登陆</a>
+							</li>
+							<li class="dropdown">
+								<a href="register.html">注册</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="doc-slide">
+				<div class="col-lg-3 col-md-4">
+					<a class="title text-center" href="">教程中心</a>
+					<div class="col-lg-5">
+						<a class="slide_word_color" href="">快速入门</a>
+						<a class="slide_word_color" href="">绑定域名</a>
+						<a class="slide_word_color" href="">网页设计</a>
+					</div>
+					<div class="col-lg-5 add_float_right">
+						<a class="slide_word_color" href="">SEO相关</a>
+						<a class="slide_word_color" href="">网站备案</a>
+						<a class="slide_word_color" href="">商城在线</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<a class="title" href="">版本更新日志</a>
+					<div>
+						<a class="slide_word_color" href="">什么是响应式网页布局? 给你...</a>
+						<a class="slide_word_color" href="">干货分享: 几何设计学原理の...</a>
+						<a class="slide_word_color" href="">如何改善网站留给用户的第一印...</a>
+						<a class="slide_word_color" href="">如何改善网站留给用户的第一印...</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<a class="title" href="">建站资讯</a>
+					<div>
+						<a class="slide_word_color" href="">系统升级日志: V4.52</a>
+						<a class="slide_word_color" href="">系统升级日志: V4.50 ...</a>
+						<a class="slide_word_color" href="">系统升级日志: V4.49</a>
+						<a class="slide_word_color" href="">系统升级日志: V4.48</a>
+					</div>
+				</div>
+			</div>
+			<div id="about-slide">
+				<div class="col-lg-2">
+					<a class="title text-center" href="">公司信息</a>
+					<div class="col-lg-6">
+						<a class="slide_word_color" href="">公司介绍</a>
+						<a class="slide_word_color" href="">服务条款</a>
+						<a class="slide_word_color" href="">可接受服务</a>
+						<a class="slide_word_color" href="">免责声明</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<a class="title" href="">荣誉资质</a>
+					<div class="add_float_left pleft_distance30">
+						<a href=""><img src="img/index-img/nav1.jpg" /></a>
+						<a href=""><img src="img/index-img/nav2.jpg" /></a>
+					</div>
+					<div>
+						<a href=""><img src="img/index-img/nav3.jpg" /></a>
+						<a href=""><img src="img/index-img/nav4.jpg" /></a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<a class="title" href="">联系客服</a>
+					<div>
+						<a class="slide_word_color" href="">客户服务热线</a>
+						<a class="slide_word_color" href="">4006-285-729</a>
+						<a class="slide_word_color" href="">QQ客户中心</a>
+						<a class="slide_word_color" href="">800088546</a>
+						<a class="slide_word_color" href="">公司地址</a>
+						<a class="slide_word_color" href="">苏州市工业园区加城大厦F4-D2</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>
+			.package_top {
+				height: 335px;
+			}
+			
+			.package_top>.top_header {
+				height: 278px;
+				overflow: hidden;
+				position: relative;
+			}
+			
+			.package_top>.top_header>.back-overlay {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+			}
+			
+			.package_top>.top_header>.packahe_top_inner1 {
+				position: absolute;
+				top: 35%;
+			}
+			
+			.package_top>.top_header>.packahe_top_inner2 {
+				position: absolute;
+				top: 65%;
+			}
+			
+			.package_top .top_nav {
+				background: #666666;
+				padding-top: 15px;
+				padding-bottom: 13px;
+			}
+			
+			@media only screen and (max-width: 992px) {
+				.package_top .top_nav {
+					display: none;
+				}
+				.package_top,
+				.package_top>.top_header,
+				.package_top>.top_header>.back-overlay {
+					height: 187px;
+				}
+				.package_top>.top_header>.packahe_top_inner1 {
+					top: 10%;
+				}
+				.package_top>.top_header>.packahe_top_inner1>h1 {
+					font-size: 21px;
+				}
+				.package_top>.top_header>.packahe_top_inner2 {
+					top: 50%;
+				}
+				.package_top>.top_header>.packahe_top_inner2>h4 {
+					font-size: 13px;
+				}
+			}
+			
+			.package_top .top_nav li {
+				display: inline-block;
+			}
+			
+			.package_top .top_nav a {
+				width: 160px;
+				height: 30px;
+				color: white;
+				font-size: 15px;
+				padding-bottom: 10px;
+				padding-top: 5px;
+			}
+			
+			.package_top .top_nav a:hover {
+				color: #D4D4D4;
+			}
+			
+			.package_top .border_left {
+				border-left: white 1px solid;
+			}
+		</style>
+		<div class="main">
+			<div class="row package_top text-center white_words">
+				<div class="top_header">
+					<div><img style="width: 100%; height: 100%;" src="img/package-img/top.jpg" /></div>
+					<div class="back-overlay col-lg-12 col-md-12" style="background-color: rgba(48,38,38,0.6);"></div>
+					<div class="packahe_top_inner1 col-lg-12 col-md-12">
+						<h1>免费使用所有模板，只需支付托管费用</h1>
+					</div>
+					<div class="packahe_top_inner2 col-lg-12 col-md-12">
+						<h4>敢为人先，起飞页支持用户网站30天无理由退款政策！</h4>
+					</div>
+				</div>
+				<div class="top_nav text-center">
+					<ul>
+						<li>
+							<a href="">托管套餐</a>
+						</li>
+						<li>
+							<a class="border_left" href="">代建服务</a>
+						</li>
+						<li>
+							<a class="border_left" href="">定制服务</a>
+						</li>
+						<li>
+							<a class="border_left" href="">常见问题</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<style type="text/css">
+				.package_middle_body .middle_body_title_box {
+					height: 150px;
+					background: #eaeaea;
+					border-top: #e2e2e2 1px solid;
+					border-left: #e2e2e2 1px solid;
+					border-right: #e2e2e2 1px solid;
+				}
+				
+				.package_middle_body .middle_body_title_box .page_icons {
+					padding-top: 20px;
+					width: 120px;
+					height: 140px;
+				}
+				
+				.package_middle_body .middle_body_title_box div {
+					float: left;
+				}
+				
+				.package_middle_body .middle_body_title_box .floor {
+					font-size: 27px;
+				}
+				
+				.table>tbody>tr>th,
+				.table>tbody>tr>td {
+					padding-top: 17px;
+					padding-bottom: 17px;
+					font-size: 14px;
+					text-align: center;
+				}
+				
+				.table>tbody>tr>td.price {
+					color: #ff6600;
+				}
+				
+				.table>tbody>tr>td.benefits {
+					color: #ff0000;
+				}
+				
+				.table>tbody>tr>td>a.buy {
+					padding: 5px;
+					color: #3ea3ff;
+					border: #F9F9F9 1px solid;
+				}
+				
+				.table>tbody>tr>td>a.buy:hover {
+					padding: 5px;
+					border: #3ea3ff 1px solid;
+				}
+				
+				.gray_border {
+					border-top: #b2b2b2 2px solid !important;
+				}
+				
+				.yellow_border {
+					border-top: #fabb01 2px solid !important;
+				}
+				
+				.blue_border {
+					border-top: #61b0ff 2px solid !important;
+				}
+				
+				.green_border {
+					border-top: #39ceab 2px solid !important;
+				}
+				
+				.red_border {
+					border-top: #e9382a 2px solid !important;
+				}
+			</style>
+			<div class="package_middle_body pbuttom_distance50" style="background: #F9F9F9;">
+				<div class="row">
+					<div class="container  text-center">
+						<div class="middle_body_title_box mtop_distance80">
+							<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><img class="page_icons" src="img/package-img/p03.png" /></div>
+							<div class="col-lg-2 col-md-3 col-sm-4 col-xs-5 ptop_distance50"><span class="floor">1F 基础套餐</span></div>
+							<div class="col-lg-8 col-md-7 col-sm-6 col-xs-5 ptop_distance50">
+								<p>起飞页为用户提供的网站模板和建站功能均为免费，我们只收取空间和服务器租用费</p>
+							</div>
+						</div>
+						<div class="middle_body_table">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th class="col-lg-2 col-md-2 gray_border">套餐名称</th>
+										<th class="col-lg-2 col-md-2 yellow_border">免费版</th>
+										<th class="col-lg-2 col-md-2 blue_border">起飞版</th>
+										<th class="col-lg-2 col-md-2 green_border">翱翔版</th>
+										<th class="col-lg-2 col-md-2 red_border">太空版</th>
+										<td class="col-lg-2 col-md-2 gray_border" rowspan="14">支持30日无理由退款<br />
+											<p>
+												<a style="color: dodgerblue;">查看所有套餐</a>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td>适用对象</td>
+										<td>适用于简单网站或评测</td>
+										<td>适用于个人或微型网站</td>
+										<td>适用于小型企业或机构</td>
+										<td>适用于中型企业或机构</td>
+									</tr>
+									<tr>
+										<td>域名</td>
+										<td>需另购买</td>
+										<td>需另购买</td>
+										<td>赠送国际域名</td>
+										<td>赠送国际域名</td>
+									</tr>
+									<tr>
+										<td>支持设备</td>
+										<td>PC、平板、手机、微信</td>
+										<td>PC、平板、手机、微信</td>
+										<td>PC、平板、手机、微信</td>
+										<td>PC、平板、手机、微信</td>
+									</tr>
+									<tr>
+										<td>空间</td>
+										<td>200M</td>
+										<td>1G(SSD)</td>
+										<td>2G(SSD)</td>
+										<td>4G(SSD)</td>
+									</tr>
+									<tr>
+										<td>流量</td>
+										<td>1G/月</td>
+										<td>5G/月</td>
+										<td>10G/月</td>
+										<td>不限</td>
+									</tr>
+									<tr>
+										<td>邮箱</td>
+										<td>/</td>
+										<td>/</td>
+										<td>/</td>
+										<td>赠送5G邮箱1个</td>
+									</tr>
+									<tr>
+										<td>商城</td>
+										<td>/</td>
+										<td>/</td>
+										<td>/</td>
+										<td>年交易额累计不超过50万元<br /></td>
+									</tr>
+									<tr>
+										<td>自动备份</td>
+										<td>/</td>
+										<td>每日自动备份</td>
+										<td>每日自动备份</td>
+										<td>每日自动备份</td>
+									</tr>
+									<tr>
+										<td>技术支持</td>
+										<td>邮件</td>
+										<td>邮件/QQ/电话</td>
+										<td>邮件/QQ/电话</td>
+										<td>邮件/QQ/电话</td>
+									</tr>
+									<tr>
+										<td>价格</td>
+										<td class="price">0元/年</td>
+										<td class="price">365元/年</td>
+										<td class="price">600元/年</td>
+										<td class="price">1200元/年</td>
+									</tr>
+									<tr>
+										<td style="padding-top: 40px;">备注</td>
+										<td>*选择海外机房可绑定域名(仅限于在起飞页购买的域名)并发布网站*网站有起飞页底标</td>
+										<td>*可绑定国际域名</td>
+										<td class="benefits">一次性购买3年套餐立享95折优惠，并赠送400元代建费！</td>
+										<td class="benefits">一次性购买3年套餐立享95折优惠，并赠送800元代建费！</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="middle_body_title_box mtop_distance80">
+							<div class="col-lg-2"><img class="page_icons" src="img/package-img/p01.png" /></div>
+							<div class="col-lg-3 col-sm-4 col-xs-4 ptop_distance50"><span class="floor">2F 网站代建服务</span></div>
+							<div class="col-lg-7 col-sm-5 col-xs-6 ptop_distance50">
+								<p>由专业建站师为您量身制作网站，您仅需联系客服、购买服务、传送资料，1-2个工作日就可“坐享其成”</p>
+							</div>
+						</div>
+						<style type="text/css">
+							.know_more {
+								padding-top: 8px;
+								width: 100px;
+								height: 35px;
+								background: rgb(97, 176, 255);
+								margin-left: 30px;
+								border: rgb(97, 176, 255) 1px solid;
+								border-radius: 50px;
+							}
+							
+							.know_more:hover {
+								background: #2AABD2;
+							}
+							
+							@media only screen and (max-width: 992px) {
+								.know_more {
+									display: none;
+								}
+							}
+							
+							.know_more>p>a:hover {
+								color: white;
+							}
+						</style>
+						<div class="middle_body_table">
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th class="col-lg-2 col-md-2 gray_border">套餐名称</th>
+										<th class="col-lg-2 col-md-2 yellow_border">微型网站代建</th>
+										<th class="col-lg-2 col-md-2 blue_border">小型网站代建</th>
+										<th class="col-lg-2 col-md-2 green_border">中型网站代建</th>
+										<th class="col-lg-2 col-md-2 red_border">大型网站代建</th>
+										<th class="col-lg-2 col-md-2 gray_border" rowspan="8">
+											<div class="know_more">
+												<p>
+													<a href="" class="white_words">
+														<strong>了解更多</strong>
+													</a>
+												</p>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<td>页面数量</td>
+										<td>≤5个</td>
+										<td>≤10个</td>
+										<td>≤5个</td>
+										<td>超过30个部分</td>
+									</tr>
+									<tr>
+										<td>模板</td>
+										<td>您需要指定一个模板</td>
+										<td>您需要指定一个模板</td>
+										<td>您需要指定一个模板</td>
+										<td>您需要指定一个模板</td>
+									</tr>
+									<tr>
+										<td>素材</td>
+										<td>您需要提供资料和图片</td>
+										<td>您需要提供资料和图片</td>
+										<td>您需要提供资料和图片
+											<您需要提供资料和图片/td>
+												<td>您需要提供资料和图片</td>
+									</tr>
+									<tr>
+										<td>代建</td>
+										<td>我们负责录入和设定</td>
+										<td>我们负责录入和设定</td>
+										<td>我们负责录入和设定</td>
+										<td>我们负责录入和设定</td>
+									</tr>
+									<tr>
+										<td>优惠</td>
+										<td>/</td>
+										<td class="benefits">一次购买3年翱翔版立刻就送！</td>
+										<td class="benefits">一次购买3年翱翔版立刻就送！</td>
+										<td>/</td>
+									</tr>
+									<tr>
+										<td class="price">价格</td>
+										<td class="price">200元</td>
+										<td class="price">200元</td>
+										<td class="price">200元</td>
+										<td class="price">200元</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+										<td>
+											<a class="buy" href="">购买服务</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="tip">
+							<p style="text-align: center; color: #fe6684;">特别提示：代建服务不影响您日后对网站进行自主更新；一次性购买3年起飞版以上的套餐(含起飞版)均赠送代建服务。</p>
+						</div>
+						<div class="middle_body_title_box mtop_distance80">
+							<div class="col-lg-2"><img class="page_icons" src="img/package-img/p02.png" /></div>
+							<div class="col-lg-3 ptop_distance50"><span class="floor">3F 网站定制设计服务</span></div>
+							<div class="col-lg-7 ptop_distance50">
+								<p>零风险，不满意100%全额退款承诺</p>
+							</div>
+						</div>
+						<div class="middle_body_table">
+							<div class="col-lg-10" style="height: 150px; border-top: #b2b2b2 2px solid; border-left: #E2E2E2 1px solid; border-bottom: #E2E2E2 1px solid;">
+								<h4> 如果代建服务无法满足您的需求，您可以了解一下起飞页专业设计师提供的定制设计服务！</h4></div>
+							<div class="col-lg-2" style="height: 150px; border-top: #b2b2b2 2px solid; border-left: #E2E2E2 1px solid; border-right: #E2E2E2 1px solid; border-bottom: #E2E2E2 1px solid;">
+								<div class="know_more">
+									<p>
+										<a href="" class="white_words">
+											<strong>了解定制设计</strong>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="body_buttom mtop_distance80">
+
+			</div>
+			<div class="go_to_top">
+				<a href="#toptop">
+					<div id="to_top"></div>
+				</a>
+			</div>
+		</div>
+		<style type="text/css">
+			.right_hide {
+				width: 100%;
+				height: 794px;
+				z-index: 999;
+				position: fixed;
+				top: 0;
+				display: none;
+			}
+			
+			.hide_bar_close {
+				width: 50px;
+				height: 70px;
+				background: rgba(0, 0, 0, .9);
+				text-align: center;
+				width: 9%;
+				cursor: pointer;
+			}
+			
+			.right_hide_bar {
+				background: rgba(50, 50, 50, .98);
+				height: 794px;
+				width: 91%;
+			}
+			
+			.right_hide_bar>ul>li:hover {
+				background: #0F0F0F;
+			}
+			
+			.right_hide_bar>ul>li>a {
+				color: white;
+				font-size: 18px;
+				width: 100%;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+			
+			.glyphicon-remove {
+				color: white;
+				font-size: 20px;
+				padding-top: 23px;
+				padding-bottom: 23px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				$("#show_hide_bar").click(function() {
+					$(".right_hide").css("display", "block");
+				})
+			})
+			$(function() {
+				$(".hide_bar_close").click(function() {
+					$(".right_hide").css("display", "none");
+				})
+			})
+		</script>
+		<div class="right_hide text-center">
+			<div class="hide_bar_close add_float_left">
+				<a>
+					<span class="glyphicon glyphicon-remove"></span>
+				</a>
+			</div>
+			<div class="right_hide_bar  add_float_left">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="model.html">模板</a>
+					</li>
+					<li>
+						<a href="package.html">套餐</a>
+					</li>
+					<li>
+						<a href="example.html">案例</a>
+					</li>
+					<li>
+						<a>文档&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+					</li>
+					<li>
+						<a>关于&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

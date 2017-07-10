@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>copy首页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/mycss/public.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my-js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div style="position: relative;">
+			<div class="header_top" id="toptop">
+				<div class="logo_div col-lg-1">
+					<a class="logo" href="index.html">
+						<img src="img/icons/logo.png" />
+					</a>
+				</div>
+				<div class="btn-group col-xs-1" id="show_hide_bar">
+					<a class="btn btn-default" style="background: #383838; border: 0;"><span class="glyphicon glyphicon-align-justify" style="color: white;"></span></a>
+				</div>
+				<div class="header_nav col-lg-10">
+					<div class="header_left">
+						<ul>
+							<li>
+								<a class="active" href="index.html">首页 </a>
+							</li>
+							<li>
+								<a href="model.html" style="">模板 </a>
+							</li>
+							<li>
+								<a href="package.html" style="">套餐 </a>
+							</li>
+							<li>
+								<a href="example.html" style="">案例</a>
+							</li>
+							<li id="doc">
+								<a>文档</a>
+							</li>
+							<li id="about">
+								<a>关于</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header_right">
+						<ul class="">
+							<li>
+								<a href="login.html">登陆</a>
+							</li>
+							<li class="dropdown">
+								<a href="register.html">注册</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="doc-slide">
+				<div class="col-lg-3 col-md-4">
+					<a class="title text-center" href="">教程中心</a>
+					<div class="col-lg-5">
+						<a class="slide_word_color" href="">快速入门</a>
+						<a class="slide_word_color" href="">绑定域名</a>
+						<a class="slide_word_color" href="">网页设计</a>
+					</div>
+					<div class="col-lg-5 add_float_right">
+						<a class="slide_word_color" href="">SEO相关</a>
+						<a class="slide_word_color" href="">网站备案</a>
+						<a class="slide_word_color" href="">商城在线</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<a class="title" href="">版本更新日志</a>
+					<div>
+						<a class="slide_word_color" href="">什么是响应式网页布局? 给你...</a>
+						<a class="slide_word_color" href="">干货分享: 几何设计学原理の...</a>
+						<a class="slide_word_color" href="">如何改善网站留给用户的第一印...</a>
+						<a class="slide_word_color" href="">如何改善网站留给用户的第一印...</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3">
+					<a class="title" href="">建站资讯</a>
+					<div>
+						<a class="slide_word_color" href="">系统升级日志: V4.52</a>
+						<a class="slide_word_color" href="">系统升级日志: V4.50 ...</a>
+						<a class="slide_word_color" href="">系统升级日志: V4.49</a>
+						<a class="slide_word_color" href="">系统升级日志: V4.48</a>
+					</div>
+				</div>
+			</div>
+			<div id="about-slide">
+				<div class="col-lg-2">
+					<a class="title text-center" href="">公司信息</a>
+					<div class="col-lg-6">
+						<a class="slide_word_color" href="">公司介绍</a>
+						<a class="slide_word_color" href="">服务条款</a>
+						<a class="slide_word_color" href="">可接受服务</a>
+						<a class="slide_word_color" href="">免责声明</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<a class="title" href="">荣誉资质</a>
+					<div class="add_float_left pleft_distance30">
+						<a href=""><img src="img/index-img/nav1.jpg" /></a>
+						<a href=""><img src="img/index-img/nav2.jpg" /></a>
+					</div>
+					<div>
+						<a href=""><img src="img/index-img/nav3.jpg" /></a>
+						<a href=""><img src="img/index-img/nav4.jpg" /></a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<a class="title" href="">联系客服</a>
+					<div>
+						<a class="slide_word_color" href="">客户服务热线</a>
+						<a class="slide_word_color" href="">4006-285-729</a>
+						<a class="slide_word_color" href="">QQ客户中心</a>
+						<a class="slide_word_color" href="">800088546</a>
+						<a class="slide_word_color" href="">公司地址</a>
+						<a class="slide_word_color" href="">苏州市工业园区加城大厦F4-D2</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style type="text/css">
+			.main-lower {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.main-lower .back-media {
+				position: relative;
+			}
+			
+			.main-lower .back-overlay {
+				position: absolute;
+				width: 100%;
+				height: 99.3%;
+				top: 0;
+			}
+			
+			#hide-img {
+				display: none;
+				height: 461px;
+			}
+			
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+				.main-lower {
+					height: 461px;
+				}
+				.main-lower .back-overlay {
+					height: 100%;
+				}
+				#show-video {
+					display: none;
+				}
+				#hide-img {
+					display: block;
+					overflow: hidden;
+				}
+			}
+			
+			@media only screen and (max-width: 767px) {
+				.main-lower {
+					height: 461px;
+				}
+				.main-lower .back-overlay {
+					height: 100%;
+				}
+				#show-video {
+					display: none;
+				}
+				#hide-img {
+					display: block;
+					overflow: hidden;
+				}
+			}
+		</style>
+		<div class="main-lower">
+			<div class="back-media">
+				<video id="show-video" autoplay="autoplay" muted="muted" volume="0" poster="http://static.qifeiye.com/caches/2d2bd038d43e773a454cbb4ae76768fb/aHR0cDovL3d3dy5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTYvMDMvZGQ4ZmRhYzcyOTA0ZTBlZmJjYzRlNzM4ZmJiYTMyOWEuanBn.jpg" loop="loop" style="width: 100%; height: 100%;object-fit:cover;object-position:center center" class="section-background-video">
+					<source type="video/webm" src="http://static.qifeiye.com/caches/2d2bd038d43e773a454cbb4ae76768fb/aHR0cDovL3d3dy5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTYvMDMvMTIzNC53ZWJt.webm" />
+					<source type="video/mp4" src="http://static.qifeiye.com/caches/2d2bd038d43e773a454cbb4ae76768fb/aHR0cDovL3d3dy5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTYvMDMvYXBwbGVfc2luZ19jaGlsZC5tcDQ_p_p100_p_3D.mp4" />
+				</video>
+				<div id="hide-img"><img src="img/index-img/girl.jpg" /></div>
+				<div class="back-overlay" style="background-color: rgba(48,38,38,0.5);"></div>
+			</div>
+		</div>
+		<style type="text/css">
+			.column_inner {
+				width: 100%;
+			}
+			
+			#simple {
+				font-size: 43px;
+			}
+			
+			.use {
+				color: #696969;
+			}
+			
+			@media only screen and (max-width:992px) {
+				#simple {
+					font-size: 20px;
+				}
+				.use {
+					font-size: 12px;
+				}
+				.container {
+					margin-top: 40px;
+				}
+			}
+		</style>
+		<div id="middle-body">
+			<div class="container mtop_distance100">
+				<div class="row">
+					<div class="column_inner">
+						<div class="words">
+							<div>
+								<p><span id="simple">更快，更简单</span></p>
+							</div>
+							<div>
+								<p><span class="use">采用响应式技术构建</span></p>
+							</div>
+							<div>
+								<p><span class="use">一次编辑，在所有设备下使用</span></p>
+							</div>
+						</div>
+						<div><img class="col-lg-12 col-sm-12 col-xs-12" src="img/index-img/middle01.jpg" alt="" description="" data-title="" title="" src-img="" style="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+				@media only screen and (max-width: 992px) {
+					.container_box {
+						margin-left: 0;
+						margin-right: 0;
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+				}
+				
+				.box_left {
+					float: left;
+				}
+				
+				.box_right {
+					float: right;
+					padding: 20px;
+				}
+				
+				.title_box {
+					padding-bottom: 25px;
+				}
+				
+				.section_box {
+					line-height: 2;
+				}
+				
+				.blue_h1 {
+					color: dodgerblue;
+				}
+			</style>
+			<!--描述：container_box是为了设置灰色背景    -->
+			<div class="row container_box  mtop_distance30 ptop_distance50 pbuttom_distance50">
+				<div class="row">
+					<div class="box_right col-lg-5 mtop_distance50">
+						<div class="title_box col-lg-10">
+							<span id="simple">基于H5模板，快速搭建一个响应式网站</span></p>
+						</div>
+						<div class="col-lg-10">
+							<p><span class="section_box">起飞页™代表着当今响应式自助建站技术的最高水平，没有之一。我们的网站构建器，将传统的编码工作转化为直观的拖拽操作和文字录入。在这里，您仅需花上10分钟便可以完成一个H5响应式网站，您会发现完全不需要编写一行代码，这就是起飞页自助建站的神奇之处。</span>
+							</p>
+						</div>
+					</div>
+					<div class="box_left col-lg-7">
+						<img class="col-lg-12 col-sm-12 col-xs-12" src="img/index-img/middle02.png" title="" description="" style="">
+					</div>
+				</div>
+			</div>
+			<div class="container  mtop_distance100">
+				<div class="row">
+					<div class="box_left col-lg-5 mtop_distance50">
+						<span class="blue_h1" id="simple">真正的响应式自助建站，自适应所有设备</span></p>
+						<div>
+							<p><span class="section_box">不同于其它假响应式品牌，起飞页采用的是真正的响应式引擎。您只需对网站资料进行一次性输入，网站即可根据访问者的设备智能地呈现出最佳效果，全程无需人工干预。设备包括但不限于：计算机、Pad、微信、手机和电视。</span></p>
+						</div>
+					</div>
+					<div class="box_right col-lg-7">
+						<img class="img-responsive" src="img/index-img/middle03.png">
+					</div>
+				</div>
+			</div>
+			<div class="row container_box  mtop_distance50 pbuttom_distance50">
+				<div class="row">
+					<div class="box_right col-lg-5 mtop_distance50">
+						<span class="blue_h1" id="simple">服务器&网络&全球部署</span></p>
+						<div class="col-lg-10">
+							<p><span class="section_box">起飞页自助建站平台全面采用第二代云服务器和云网络。其中，服务器硬件使用最新Xeon处理器、32个物理CPU核心、RAID10存储、ECC内存、SSD硬盘，高配服务器在提供超高性能的同时，更可减少出错几率；另外，优质、昂贵的中港加速网络确保您在大陆地区也可以迅速稳定地打开香港的网站。起飞页拥有中国大陆、中国香港以及全球5个海外云节点可供选择，将网站一键部署到距离客户最近的国家和地区。</span></p>
+						</div>
+					</div>
+					<div class="box_left col-lg-7">
+						<img class="img-responsive" src="img/index-img/middle04.png" alt="" title="" description="">
+					</div>
+				</div>
+			</div>
+			<div class="container  mtop_distance100">
+				<div class="row">
+					<div class="box_left col-lg-5 mtop_distance50">
+						<span class="blue_h1" id="simple">全面的搜索引擎优化 轻松获得更高排名</span></p>
+						<div>
+							<p><span class="section_box">谁说自助建站的SEO效果就一定差？无需额外设置，平台自动为您生成网站地图（sitemap），帮助搜索引擎全面地对网站进行索引；同时，页面标题、页面描述以及静态化链接技术也可以帮助您更加轻松地获得较高的关键词排名。</span></p>
+						</div>
+					</div>
+					<div class="box_right col-lg-7">
+						<img class="img-responsive" src="img/index-img/middle05.png" alt="" title="" description="">
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+				.icons_box {
+					margin-left: 70px;
+				}
+				
+				.icons_box div p {
+					padding-top: 100px;
+				}
+				
+				.change_icon_color {
+					width: 300px;
+					height: 200px;
+					border: lightgray 1px solid;
+					float: left;
+					margin: 20px;
+					padding-top: 40px;
+					padding-left: 110px;
+					;
+				}
+				
+				#cnd_announce {
+					background: url(img/icons/middle-icon01.png) no-repeat center;
+				}
+				
+				#cache {
+					background: url(img/icons/middle-icon02.png) no-repeat center;
+				}
+				
+				#compress {
+					background: url(img/icons/middle-icon03.png) no-repeat center;
+				}
+				
+				#file_combine {
+					background: url(img/icons/middle-icon04.png) no-repeat center;
+				}
+				
+				#analysis {
+					background: url(img/icons/middle-icon05.png) no-repeat center;
+				}
+				
+				#img_compress {
+					background: url(img/icons/middle-icon06.png) no-repeat center;
+				}
+				
+				#cnd_announce:hover {
+					background: url(img/icons/middle-icon01-1.png) white no-repeat center;
+				}
+				
+				#cache:hover {
+					background: url(img/icons/middle-icon02-2.png) white no-repeat center;
+				}
+				
+				#compress:hover {
+					background: url(img/icons/middle-icon03-3.png) white no-repeat center;
+				}
+				
+				#file_combine:hover {
+					background: url(img/icons/middle-icon04-4.png) white no-repeat center;
+				}
+				
+				#analysis:hover {
+					background: url(img/icons/middle-icon05-5.png) white no-repeat center;
+				}
+				
+				#img_compress:hover {
+					background: url(img/icons/middle-icon06-6.png) white no-repeat center;
+				}
+				
+				@media only screen and (max-width: 992px) {
+					#hide_when_less_992 {
+						display: none;
+					}
+				}
+			</style>
+			<div class="row container_box pbuttom_distance50" id="hide_when_less_992">
+				<div class="container">
+					<div class="words title_box ptop_distance100 ">
+						<div class="title_box">
+							<p><span><h1>1秒打开，快得有点儿狠</h1></span></p>
+						</div>
+						<div>
+							<p><span>超高性能云服务器和云网络，CPU提速90%，内存提速50%，IO处理提速200%，网速提高100%</span></p>
+						</div>
+					</div>
+					<div class="icons_box">
+						<div class="change_icon_color" id="cnd_announce">
+							<p><span><strong>CDN发布</strong></span></p>
+						</div>
+						<div class="change_icon_color" id="cache">
+							<p><span><strong>多层缓存</strong></span></p>
+						</div>
+						<div class="change_icon_color" id="compress">
+							<p><span><strong>页面压缩</strong></span></p>
+						</div>
+						<div class="change_icon_color" id="file_combine">
+							<p><span><strong>JS/CSS文件合并</strong></span></p>
+						</div>
+						<div class="change_icon_color" id="analysis">
+							<p><span><strong>DNS云解析</strong></span></p>
+						</div>
+						<div class="change_icon_color" id="img_compress">
+							<p><span><strong>图片无损压缩</strong></span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+				.carousel_box {
+					width: 100%;
+					height: 400px;
+					border: #e2e2e2 1px solid;
+				}
+				
+				.left_right_icon_box {
+					text-align: center;
+					width: 2.5%;
+					height: 50px;
+					margin-top: 140px;
+				}
+				
+				.left_right_icon {
+					width: 100%;
+					height: 100%;
+					background: lightskyblue;
+					padding-top: 15px;
+					cursor: pointer;
+					color: white;
+				}
+				
+				.temp_center {
+					padding-left: 20px;
+					overflow: hidden;
+					width: 93%;
+					height: 511px;
+					float: left;
+				}
+				
+				.temp_center>.temp_center_ul {
+					width: 2720px;
+					position: relative;
+					transition: left 1s;
+					left: 0;
+				}
+				
+				.temp_center>.temp_center_ul>.center_li>img {
+					float: left;
+					padding-right: 10px;
+					width: 440px;
+				}
+			</style>
+			<div class="container text-center mtop_distance100">
+				<div>
+					<h1>免费海量模板随您挑选</h1></div>
+				<div class="mtop_distance50">
+					<h4>您可以从众多出色的H5模板中挑选出您最喜欢的</h4></div>
+			</div>
+			<div class="carousel_box ptop_distance30 mtop_distance30">
+				<div class="left_right_icon_box" style="float: left;">
+					<a class="left_right_icon" id="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+				</div>
+				<div class="temp_center">
+					<ul class="temp_center_ul">
+						<li class="center_li">
+							<img src="img/index-img/carousel01.png" />
+						</li>
+						<li class="center_li">
+							<img src="img/index-img/carousel02.png" />
+						</li>
+						<li class="center_li">
+							<img src="img/index-img/carousel03.png" />
+						</li>
+						<li class="center_li">
+							<img src="img/index-img/carousel04.png" />
+						</li>
+						<li class="center_li">
+							<img src="img/index-img/carousel05.png" />
+						</li>
+						<li class="center_li">
+							<img src="img/index-img/carousel06.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="left_right_icon_box" style="float: right;">
+					<a class="left_right_icon" id="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+			</div>
+			<script type="text/javascript">
+				var prev = $("#prev");
+				var next = $("#next");
+				var temp_left = 0;
+
+				function nextImg() {
+					temp_left = (temp_left - 450) % 1800;
+					$(".temp_center_ul").css("left", temp_left + "px");
+				}
+
+				function prevImg() {
+					if(temp_left == 0) {
+						temp_left = -1350;
+					} else {
+						temp_left = (temp_left + 450) % 1800;
+					}
+					$(".temp_center_ul").css("left", temp_left + "px");
+				}
+
+				prev.click(function() {
+					clearInterval(interval);
+					prevImg();
+					temp_interval = setInterval(nextImg, 3000);
+				})
+				next.click(function() {
+					clearInterval(interval);
+					nextImg();
+					temp_interval = setInterval(nextImg, 3000);
+				})
+				var temp_interval = setInterval(nextImg, 3000);
+			</script>
+			<style type="text/css">
+				.six_img_box {
+					float: left;
+				}
+				
+				@media only screen and (max-width: 992px) {
+					.clear_float {
+						clear: both;
+					}
+					.clearfix {
+						float: left;
+					}
+				}
+			</style>
+			<div class="row container_box" style="margin-top: 100px; padding-top: 60px;">
+				<div class="words">
+					<span class="blue_h1" id="simple">始于2007年，已经为超过15万用户提供建站服务</span></p>
+					<div>
+						<p><span class="section_box">众多不了解编程的用户使用起飞页自助建站平台做出了效果非凡的网站。也许，您也可以和他们一样出色！</span></p>
+					</div>
+				</div>
+				<div class="left_right_distance ptop_distance50">
+					<div class="six_img_box col-lg-4 col-md-4 col-xs-6"><img class="img-responsive" src="img/index-img/1.png" /></div>
+					<div class="six_img_box col-lg-4 col-md-4 col-xs-6"><img class="img-responsive" src="img/index-img/2.png" /></div>
+					<div class="six_img_box col-lg-4 col-md-4 col-xs-6 clear_float"><img class="img-responsive" src="img/index-img/3.png" /></div>
+					<div class="clearfix"></div>
+					<div class="six_img_box col-lg-4 col-md-4 col-xs-6"><img class="img-responsive" src="img/index-img/4.png" /></div>
+					<div class="six_img_box col-lg-4 col-md-4 col-xs-6 clear_float"><img class="img-responsive" src="img/index-img/5.png" /></div>
+					<div class="six_img_box col-lg-4 col-md-4 col-xs-6"><img class="img-responsive" src="img/index-img/6.png" /></div>
+				</div>
+			</div>
+			<style type="text/css">
+				#buttom_down {
+					height: 944px;
+					background: url(img/index-img/buttom-down.jpg) no-repeat;
+				}
+			</style>
+			<div class="container check_more text-center mtop_distance80 mbuttom_distance50">
+				<div class="row">
+					<p>
+						<a href="" class="white_words">
+							<strong>查看更多案例　</strong>
+							<span class="glyphicon glyphicon-arrow-right" style="font-size: 14px; padding-top: 3px;"></span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="row ptop_distance100 container_box" id="buttom_down">
+				<div class="container">
+					<div class="words title_box">
+						<span class="white_words" id="simple">我们提供的不仅仅是工具</span></p>
+						<div>
+							<p><span class="section_box white_words">起飞页不仅是一个方便快捷的构建网站的自助建站平台，更重要的是，我们为中国用户提供了更多贴心的服务：网站备案、自动备份、快速恢复以及网站代建服务。 我们使用了国内、香港和海外最好的网络和云服务器，以确保您的网站能够快速完美地呈现在世界各地的访客面前</span></p>
+						</div>
+					</div>
+					<div><img class="img-responsive" src="img/index-img/buttom-up.png" /></div>
+				</div>
+			</div>
+			<style type="text/css">
+				.partner {
+					border: gainsboro 1px solid;
+					margin: 5px;
+					height: 220px;
+					float: left;
+					padding: 40px 20px 0 25px;
+					margin-top: 30px;
+					width: 23.5%;
+				}
+				
+				.partner:hover {
+					border: lightskyblue 1px solid;
+				}
+				
+				.partner h4 {
+					padding-top: 20px;
+				}
+				
+				@media only screen and (min-width: 555px) and (max-width: 992px) {
+					.partner {
+						margin: 0;
+						height: 100px;
+						float: left;
+						padding-top: 20px;
+						width: 47%;
+					}
+					.partner h4 {
+						display: none;
+					}
+				}
+				
+				@media only screen and (min-width: 333px) and (max-width: 554px) {
+					.partner {
+						margin: 0;
+						height: 100px;
+						float: left;
+						padding-top: 20px;
+						width: 47%;
+					}
+					.partner h4 {
+						display: none;
+					}
+				}
+				
+				@media only screen and (max-width: 332px) {
+					.partner {
+						margin: 0;
+						height: 60px;
+						float: left;
+						padding: 15px;
+						width: 45%;
+					}
+					.partner img {
+						width: 100%;
+					}
+					.partner h4 {
+						display: none;
+					}
+				}
+			</style>
+			<div class="row words container_box ptop_distance100 pbuttom_distance100" style="margin-top: 100px;">
+				<div class="container">
+					<span class="blue_h1" id="simple">合作伙伴</span></p>
+					<div class="mtop_distance50">
+						<div class="partner">
+							<img class="img-responsive" src="img/index-img/partner01.png" />
+							<p>
+								<h4>亚马逊合作伙伴<br /><span>amazon</span></h4></p>
+						</div>
+						<div class="partner">
+							<img class="img-responsive" src="img/index-img/partner02.png" />
+							<p>
+								<h4>阿里云金牌合作伙伴<br /><span>aliyun</span></h4></p>
+						</div>
+						<div class="partner">
+							<img class="img-responsive" src="img/index-img/partner03.png" />
+							<p>
+								<h4>中国电信指定供应商<br /><span>China telecom</span></h4></p>
+						</div>
+						<div class="partner">
+							<img class="img-responsive" src="img/index-img/partner04.png" />
+							<p>
+								<h4>贝宝合作伙伴<br /><span>PayPal</span></h4></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<style type="text/css">
+				.carousel_buttom_box {
+					width: 100%;
+					height: 300px;
+					float: left;
+					border-top: #e2e2e2 1px solid;
+				}
+				
+				.left_icon_box,
+				.right_icon_box {
+					text-align: center;
+					width: 3%;
+					height: 40px;
+					margin-top: 70px;
+					background: #cecece;
+				}
+				
+				.left_icon,
+				.right_icon {
+					width: 100%;
+					height: 100%;
+					background: #cecece;
+					padding-top: 10px;
+					cursor: pointer;
+					color: white;
+				}
+				
+				.temp {
+					overflow: hidden;
+					/*width: 94%;*/
+					width: 1050px;
+					height: 150px;
+					float: left;
+				}
+				
+				.temp>.temp_ul {
+					width: 3150px;
+					position: relative;
+					transition: left 1s;
+					left: 0;
+				}
+				
+				.temp>.temp_ul>.carousel_li {
+					width: 1050px;
+					float: left;
+				}
+			</style>
+			<div class="container mtop_distance100">
+				<!--<div class="row">-->
+					<div style="text-align: center;">
+						<p>
+							<h1>客户反馈</h1></p>
+					</div>
+					<div class="carousel_buttom_box ptop_distance50 mtop_distance30">
+						<div class="left_icon_box" style="float: left;">
+							<a class="left_icon" id="prev_li">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+							</a>
+						</div>
+						<div class="temp">
+							<ul class="temp_ul">
+								<li class="carousel_li">
+									<div style="width: 20%; height: 150px;float: left; padding-left: 40px;">
+										<img src="img/index-img/carousel11.png" />
+									</div>
+									<div style="width: 75%; height: 150px;float: left; padding-top: 15px;">
+										<p>选用起飞页一是因为他们就在我们隔壁，二是他们的价格确实很吸引人。在试用了3个月后，我们果断的购买了5年的套餐。起飞页不仅提供了一个美观大方的网站，也提供了稳定的后期服务。我们不断的在为客户介绍起飞页。</p>
+										<h4 style=" float: right; padding-right: 50px;">苏州金蝶软件</h4>
+									</div>
+								</li>
+								<li class="carousel_li">
+									<div style="width: 20%; height: 150px;float: left; padding-left: 40px;">
+										<img src="img/index-img/carousel12.png" />
+									</div>
+									<div style="width: 75%; height: 150px;float: left; padding-top: 15px;">
+										<p>如果和WIX, Weebly或者Squarespace进行比较，我觉得起飞页更像是一个综合体。它和Squarespace一样能做出很多华丽的效果，又像weebly一样能很快的搭建博客，又和wix一样容易上手，而且还是响应式的。总之，起飞页是一个很适合我的平台。</p>
+										<h4 style=" float: right; padding-right: 50px;">北欧维森商旅</h4>
+									</div>
+								</li>
+								<li class="carousel_li">
+									<div style="width: 20%; height: 150px;float: left; padding-left: 40px;">
+										<img src="img/index-img/carousel13.png" />
+									</div>
+									<div style="width: 75%; height: 150px;float: left; padding-top: 15px;">
+										<p>选用起飞页一是因为他们就在我们隔壁，二是他们的价格确实很吸引人。在试用了3个月后，我们果断的购买了5年的套餐。起飞页不仅提供了一个美观大方的网站，也提供了稳定的后期服务。我们不断的在为客户介绍起飞页。</p>
+										<h4 style=" float: right; padding-right: 50px;">苏州金蝶软件</h4>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="right_icon_box" style="float: right;">
+							<a class="right_icon" id="next_li">
+								<span class="glyphicon glyphicon-chevron-right" id="next_li"></span>
+							</a>
+						</div>
+					</div>
+				<!--</div>-->
+			</div>
+			<script type="text/javascript">
+				var prev_li = $("#prev_li");
+				var next_li = $("#next_li");
+				var carousel_li = $(".carousel_li");
+				var left = 0;
+
+				function next_liImg() {
+					left = (left - 1050) % 3150;
+					$(".temp_ul").css("left", left + "px");
+				}
+
+				function prev_liImg() {
+					if(left == 0) {
+						left = -2100;
+					} else {
+						left = (left + 1050) % 3150;
+					}
+					$(".temp_ul").css("left", left + "px");
+				}
+				var interval = setInterval(next_liImg, 5000);
+				prev_li.click(function() {
+					clearInterval(interval);
+					prev_liImg();
+					interval = setInterval(next_liImg, 5000);
+				})
+				next_li.click(function() {
+					clearInterval(interval);
+					next_liImg();
+					interval = setInterval(next_liImg, 5000);
+				})
+				
+			</script>
+			<style type="text/css">
+				.text_height {
+					height: 150px;
+				}
+				
+				.friend_link li {
+					display: block;
+					float: left;
+					padding-right: 20px;
+				}
+				
+				#10-5 {
+					float: right;
+				}
+				
+				@media only screen and (max-width: 992px) {
+					.text_height {
+						height: 330px;
+					}
+					.10-5 {
+						float: right;
+					}
+					.font_min {
+						font-size: 19px;
+					}
+					.font_min_and_min {
+						font-size: 12px;
+					}
+				}
+			</style>
+			<div class="container mtop_distance100">
+				<div class="body_buttom">
+					<div class=" top_border buttom_border text_height body_buttom_phone">
+						<div class="add_float_left col-lg-3 col-md-3 col-xs-12 ptop_distance20">
+							<h3 class="font_min">客户服务热线：<br /><strong>4006-285-729<h3/></strong></p>
+						</div>
+						<div class="add_float_left col-lg-6 col-md-5  col-xs-12 ptop_distance20">
+							<h3 class="font_min"><strong>工作时间：09:00~19:00</strong>（节假日定时响应）</h3>
+							<p>为每个用户提供优质的客户服务 让每个人都能自己做出赏心悦目的网站</p>
+						</div>
+						<div class="col-lg-3 col-md-3  col-xs-12 10-5">
+							<img class="ptop_distance30" src="img/index-img/10-5.jpg" />
+						</div>
+					</div>
+					<div class="clearfix"></div>
+					<div class="pleft_distance30 buttom_border friend_link">
+						<li>友情链接：
+							<li>
+								<a class="black_words">开源CMS</a>
+							</li>
+							<li>
+								<a class="black_words">好问</a>
+							</li>
+							<li>
+								<a class="black_words">模板之家</a>
+							</li>
+							<li>
+								<a class="black_words">织梦猫</a>
+							</li>
+						</li>
+					</div>
+				</div>
+			</div>
+			<div class="container line_height3">
+				<div class="body_buttom ptop_distance20">
+					<div class="add_float_left col-lg-3">
+						<div>
+							<h4><strong>起飞页<span></span>优雅做网站</strong></h4></div>
+						<div>
+							<ul>
+								<li>
+									<p class="font13 line_height2">2014年起，专注于响应式建站领域。起飞页是目前国内最专业、最领先的响应式建站平台</p>
+								</li>
+								<li>
+									<ul>
+										<li>
+											<h5><strong>QQ客服：800088546</strong></h5></li>
+										<li>
+											<h5><strong>客服热线：4006-285-729 / 0512-62969169</strong></h5></li>
+									</ul>
+								</li>
+								<li>
+									<h3 class="ptop_distance20"><strong>合作伙伴：</strong></h3>
+									<ul>
+										<li><img class="icon_img_box" src="img/index-img/partner01.png" /></li>
+										<li><img class="icon_img_box" src="img/index-img/partner02.png" /></li>
+										<li><img class="icon_img_box" src="img/index-img/partner03.png" /></li>
+										<li><img class="icon_img_box" src="img/index-img/partner04.png" /></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="company_info">
+						<div class="add_float_left col-lg-2">
+							<div>
+								<h4><strong>公司信息</strong></h4></div>
+							<div>
+								<ul>
+									<li>
+										<a class="black_words font13" href="">公司介绍</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">服务条款</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">法律声明</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">可接受服务</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">免责声明</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="add_float_left col-lg-2">
+							<div>
+								<h4><strong>技术支持</strong></h4></div>
+							<div>
+								<ul>
+									<li>
+										<a class="black_words font13" href="">联系客服</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">建站教程</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">更新日志</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">建站商城</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">博客</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="add_float_left col-lg-2">
+							<div>
+								<h4><strong>快速入口</strong></h4></div>
+							<div>
+								<ul>
+									<li>
+										<a class="black_words font13" href="">购买套餐和服务</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">提交域名备案流程</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">申请域名设定服务</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">在线格式转换</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">检测网站为什么打不开</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">检测网站为什么打开很慢</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="add_float_left col-lg-3">
+							<div>
+								<h4><strong>最新资讯</strong></h4></div>
+							<div>
+								<ul>
+									<li>
+										<a class="black_words font13" href="">干货分享: 几何设计学原理の黄金分割在网...</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">系统升级日志: V4.52</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">如何改善网站留给用户的第一印象？（下）</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">如何改善网站留给用户的第一印象？（上）</a>
+									</li>
+									<li>
+										<a class="black_words font13" href="">多彩字体指南：让新手也能快速体验网页缤纷...</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="go_to_top">
+				<a href="#toptop">
+					<div id="to_top"></div>
+				</a>
+			</div>
+			<div class="container">
+				<div class="row words top_border friend_link font_min_and_min">
+					<p class="ptop_distance10">拓展您的业务，展示您的风采，或者只是尝试一下新的想法。 起飞页自助建站平台，拉近您与互联网的距离！</p>
+				</div>
+				<div class="row  words top_border friend_link font_min_and_min">
+					<p class="ptop_distance15">版权所有 2013-2017 苏州卡达网络科技有限公司 增值电信业务经营许可证苏B2-20150321 苏ICP备09008221号-3 版本: V3.6</p>
+				</div>
+			</div>
+			<ul class="right_nav_bar">
+				<li>
+					<a href="">
+						<div class="icons qq_icon">
+							<i class="glyphicon glyphicon-phone-alt icon"></i>
+							<span class="tips">在线客服</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="icons phone_icon" style="background: rgb(49, 53, 61)">
+							<i class="glyphicon glyphicon-earphone icon"></i>
+							<span class="tips">34567890</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="icons lesson_icon" style="background: rgb(49, 53, 61)">
+							<i class="glyphicon glyphicon-list-alt icon"></i>
+							<span class="tips">教程中心</span>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<div class="WeChat" style="background: rgb(49, 53, 61)">
+							<i class="glyphicon glyphicon-folder-open icon"></i>
+							<span class="tips"></span>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<!--<style type="text/css">
+				.hide_wechat {
+					position: fixed;
+  					right: 130px; 
+				    top: 60%;
+				    z-index: 10001;
+				    list-style: outside none none;
+				    width: 150px;
+				    background: #31353d;
+				}
+			</style>
+			<div class="hide_wechat">
+				<div style="position: relative;">
+					<img src="img/icons/wechat.jpg" />
+					<div>
+						<div style="height: 75px; background-color: rgba(48,38,38,0.3); top: 0;"></div>
+						<div style="height: 75px; background-color: rgba(48,38,38,0.6); top: 75px;"></div>
+					</div>
+				</div>
+			</div>-->
+		</div>
+		<style type="text/css">
+			.right_hide {
+				width: 100%;
+				height: 794px;
+				z-index: 999;
+				position: fixed;
+				top: 0;
+				display: none;
+			}
+			
+			.hide_bar_close {
+				width: 50px;
+				height: 70px;
+				background: rgba(0, 0, 0, .9);
+				text-align: center;
+				width: 9%;
+				cursor: pointer;
+			}
+			
+			.right_hide_bar {
+				background: rgba(50, 50, 50, .98);
+				height: 794px;
+				width: 91%;
+			}
+			
+			.right_hide_bar>ul>li:hover {
+				background: #0F0F0F;
+			}
+			
+			.right_hide_bar>ul>li>a {
+				color: white;
+				font-size: 18px;
+				width: 100%;
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+			
+			.glyphicon-remove {
+				color: white;
+				font-size: 20px;
+				padding-top: 23px;
+				padding-bottom: 23px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				$("#show_hide_bar").click(function() {
+					$(".right_hide").css("display", "block");
+				})
+			})
+			$(function() {
+				$(".hide_bar_close").click(function() {
+					$(".right_hide").css("display", "none");
+				})
+			})
+		</script>
+		<div class="right_hide text-center">
+			<div class="hide_bar_close add_float_left">
+				<a>
+					<span class="glyphicon glyphicon-remove"></span>
+				</a>
+			</div>
+			<div class="right_hide_bar  add_float_left">
+				<ul>
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="model.html">模板</a>
+					</li>
+					<li>
+						<a href="package.html">套餐</a>
+					</li>
+					<li>
+						<a href="example.html">案例</a>
+					</li>
+					<li>
+						<a>文档&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+					</li>
+					<li>
+						<a>关于&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

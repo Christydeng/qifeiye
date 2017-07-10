@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/mycss/public.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my-js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<!--<style type="text/css">
+			.carousel_box {
+				width: 100%;
+				height: 400px;
+				border: #e2e2e2 1px solid;
+			}
+			
+			.left_right_icon_box {
+				text-align: center;
+				width: 2.5%;
+				height: 50px;
+				margin-top: 140px;
+			}
+			
+			.left_right_icon {
+				width: 100%;
+				height: 100%;
+				background: lightskyblue;
+				padding-top: 15px;
+				cursor: pointer;
+				color: white;
+			}
+			
+			.temp_center {
+				padding-left: 20px;
+				overflow: hidden;
+				width: 93%;
+				height: 511px;
+				float: left;
+			}
+			
+			.temp_center>.temp_center_ul {
+				width: 2720px;
+				position: relative;
+				transition: left 1s;
+				left: 0;
+			}
+			
+			.temp_center>.temp_center_ul>.center_li>img {
+				float: left;
+				padding-right: 10px;
+				width: 440px;
+			}
+		</style>
+		<div class="container text-center mtop_distance100">
+			<div><h1>免费海量模板随您挑选</h1></div>
+			<div class="mtop_distance50"><h4>您可以从众多出色的H5模板中挑选出您最喜欢的</h4></div>
+		</div>
+		<div class="carousel_box ptop_distance30 mtop_distance30">
+			<div class="left_right_icon_box" style="float: left;">
+				<a class="left_right_icon" id="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+			</div>
+			<div class="temp_center">
+				<ul class="temp_center_ul">
+					<li class="center_li">
+						<img src="img/index-img/carousel01.png" />
+					</li>
+					<li class="center_li">
+						<img src="img/index-img/carousel02.png" />
+					</li>
+					<li class="center_li">
+						<img src="img/index-img/carousel03.png" />
+					</li>
+					<li class="center_li">
+						<img src="img/index-img/carousel04.png" />
+					</li>
+					<li class="center_li">
+						<img src="img/index-img/carousel05.png" />
+					</li>
+					<li class="center_li">
+						<img src="img/index-img/carousel06.png" />
+					</li>
+				</ul>
+			</div>
+			<div class="left_right_icon_box" style="float: right;">
+				<a class="left_right_icon" id="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var prev = $("#prev");
+			var next = $("#next");
+			var left = 0;
+
+			function nextImg() {
+				left = (left - 450) % 1800;
+				$(".temp_center_ul").css("left", left + "px");
+			}
+
+			function prevImg() {
+				if(left == 0) {
+					left = -1350;
+				} else {
+					left = (left + 450) % 1800;
+				}
+				$(".temp_center_ul").css("left", left + "px");
+			}
+
+			prev.click(function() {
+				clearInterval(interval);
+				prevImg();
+				interval = setInterval(nextImg, 3000);
+			})
+			next.click(function() {
+				clearInterval(interval);
+				nextImg();
+				interval = setInterval(nextImg, 3000);
+			})
+			var interval = setInterval(nextImg, 3000);
+		</script>-->
+		<style type="text/css">
+			.middle_body {
+				overflow: hidden;
+				background: #F9F9F9;
+				padding-bottom: 80px;
+				padding-top: 80px;
+			}
+			
+			.middle_body_left {
+				padding-left: 30px;
+				padding-top: 40px;
+			}
+			
+			.middle_body_left a {
+				display: block;
+				font-size: 16px;
+				color: black;
+			}
+			
+			.middle_body_left a:hover {
+				background: lightgrey;
+			}
+			
+			.middle_body_right {
+				border-left: lightgrey 1px solid;
+			}
+			
+			.middle_body_right div {
+				float: left;
+				padding-bottom: 50px;
+			}
+			
+			.middle_body_right p {
+				font-size: 17px;
+			}
+			
+			.example_hide_header, .example_show_header  {
+				position: relative;
+			}
+			
+			.example_show_header{
+				width: 100%;
+				height: 314px;
+				overflow: hidden;
+			}
+			
+			.example_show_header>.top>img, .example_hide_header>.hide_top>img {
+				width: 100%;
+				height: 100%; 
+			}
+			
+			.over_play, .hide_over_play {
+				width: 100%;
+				height: 100%; 
+				top: 0; 
+				background-color: rgba(48,38,38,0.2); 
+				position: absolute;
+			}
+			
+			.example_show_header>.inner_container {
+				position: absolute;
+				width: 100%;
+				top: 23%;
+				color: white;
+				padding-left: 120px;
+			}
+			
+			.example_show_header>.inner_container>div {
+				width: 60%;
+			}
+			.example_hide_header>.inner_container>div {
+				width: 100%;
+			}
+			
+			.example_hide_header {
+				display: none;
+				width: 100%;
+				height: 349px;
+				overflow: hidden;
+			}
+			
+			.example_hide_header>.hide_inner_container {
+				color: white;
+				padding-left: 20px;
+				padding-right: 20px;
+				font-size: 16px;
+				position: absolute;
+				top: 20%;
+			}
+			
+			.example_hide_header>.hide_inner_container>div>a {
+				width: 150px; 
+				height: 45px; 
+				background: #0088c2;
+				border-radius: 5px; 
+				display: block; 
+				margin-top: 5%; 
+				text-align: center; 
+				padding-top: 10px; 
+				color: white;
+			}
+			
+			.example_hide_header>.hide_inner_container>div>a:hover {
+				background: cornflowerblue;
+			}
+			
+			@media only screen and (min-width: 606px) and (max-width: 992px) {
+				.example_hide_header {
+					display: block;
+				}
+				.example_show_header {
+					height: 134px;
+				}
+				.example_show_header>.inner_container {
+					top: 0;
+					padding-left: 20px;
+				}
+				
+			
+			}
+			@media only screen and (max-width: 605px) {
+				.example_hide_header {
+					display: block;
+					height: 424px;
+				}
+				.example_hide_header>.hide_top>img {
+					width: 630px;
+					height: 424px;
+				}
+				.example_show_header {
+					height: 167px;
+				}
+				.example_show_header>.inner_container {
+					width: 100%;
+					top: 0;
+					padding-left: 5px;
+				}
+				.example_show_header>.inner_container>div {
+					width: 100%;
+					padding-top: 5px;
+				}
+			}
+		</style>
+		<div class="row">
+			<div class="top_background">
+				<div class="example_hide_header">
+					<div class="hide_top"><img src="img/example-img/min-top.jpg" /></div>
+					<div class="hide_over_play"></div>
+					<div class="hide_inner_container">
+						<div><img src="img/example-img/min-top-word.png" /></div><br />
+						<div>
+							<p>起飞页是当今最领先的响应式自助建站平台，流线式网页布局设计方案，可视化图文内容编辑模式，它让网站制作和维护成为一件轻松惬意的事。无论是普通互联网用户还是专业网站制作人员，都能使用起飞页设计出最具专业水准的网站</p>
+						</div>
+						<div><a>现在注册</a></div>
+					</div>
+				</div>
+				<div class="example_show_header">
+					<div class="top"><img src="img/example-img/top.jpg" /></div>
+					<div class="over_play"></div>
+					<div class="inner_container container">
+						<div>
+							<h1>用户作品展示</h1></div>
+						<div>
+							<p>众多不懂编程的用户使用起飞页自助建站平台做出了效果非凡的网站。</p>
+						</div>
+						<div>
+							<p>也许，您也可以和他们一样出色！</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
