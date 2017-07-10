@@ -1,0 +1,656 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	font-family: "微软雅黑";
+}
+
+body {
+	overflow-x: hidden;
+}
+
+a {
+	display: block;
+	font-family: "微软雅黑";
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+.active {
+	background: lightgrey;
+}
+
+.mtop_distance30 {
+	margin-top: 30px;
+}
+
+.mtop_distance50 {
+	margin-top: 50px;
+}
+
+.mtop_distance80 {
+	margin-top: 80px;
+}
+
+.mtop_distance100 {
+	margin-top: 100px;
+}
+
+.mtop_distance150 {
+	margin-top: 150px;
+}
+
+.ptop_distance20 {
+	padding-top: 20px;
+}
+
+.ptop_distance30 {
+	padding-top: 30px;
+}
+
+.ptop_distance50 {
+	padding-top: 50px;
+}
+
+.ptop_distance70 {
+	padding-top: 70px;
+}
+
+.ptop_distance100 {
+	padding-top: 100px;
+}
+
+.ptop_distance150 {
+	padding-top: 150px;
+}
+
+.mbuttom_distance50 {
+	margin-bottom: 50px;
+}
+
+.mbuttom_distance100 {
+	margin-bottom: 100px;
+}
+
+.mbuttom_distance150 {
+	margin-bottom: 150px;
+}
+
+.pbuttom_distance20 {
+	padding-bottom: 20px;
+}
+
+.pbuttom_distance50 {
+	padding-bottom: 50px;
+}
+
+.pbuttom_distance100 {
+	padding-bottom: 100px;
+}
+
+.pbuttom_distance150 {
+	padding-bottom: 150px;
+}
+
+.mleft_distance20 {
+	margin-left: 20px;
+}
+
+.mleft_distance30 {
+	margin-left: 30px;
+}
+
+.mleft_distance50 {
+	margin-left: 50px;
+}
+
+.mleft_distance100 {
+	margin-left: 100px;
+}
+
+.mleft_distance150 {
+	margin-left: 150px;
+}
+
+.mright_distance20 {
+	margin-right: 20px;
+}
+
+.mright_distance30 {
+	margin-right: 30px;
+}
+
+.mright_distance50 {
+	margin-right: 50px;
+}
+
+.mright_distance100 {
+	margin-right: 100px;
+}
+
+.mright_distance150 {
+	margin-right: 150px;
+}
+
+.pleft_distance10 {
+	padding-left: 10px;
+}
+
+.pleft_distance30 {
+	padding-left: 30px;
+}
+
+.pleft_distance50 {
+	padding-left: 50px;
+}
+
+.pleft_distance80 {
+	padding-left: 80px;
+}
+
+.pleft_distance100 {
+	padding-left: 100px;
+}
+
+.pleft_distance150 {
+	padding-left: 150px;
+}
+
+.pleft_distance250 {
+	padding-left: 250px;
+}
+
+.pleft_distance450 {
+	padding-left: 450px;
+}
+
+.add_float_left {
+	float: left;
+}
+
+.add_float_right {
+	float: right;
+}
+
+.black_words {
+	color: black;
+}
+
+.black_words:hover {
+	color: #2AABD2;
+}
+
+.line_height2 {
+	line-height: 2;
+}
+
+.line_height3 {
+	line-height: 3;
+}
+
+.top_border {
+	border-top: lightgray 1px solid;
+}
+
+.buttom_border {
+	border-bottom: lightgray 1px solid;
+}
+
+
+/*********各页面共享样式************/
+
+.row {
+	margin: 0;
+}
+
+.container_box {
+	background: #F9F9F9;
+}
+
+.friend_link {
+	height: 60px;
+	padding-top: 20px;
+}
+
+
+/***********************
+ * foot各页面底部样式设置
+ */
+
+.font13 {
+	font-size: 13px;
+}
+
+.icon_img_box {
+	width: 24%;
+	height: 30%;
+	float: left;
+}
+
+@media only screen and (max-width: 992px) {
+	#company_info {
+		display: none;
+	}
+}
+
+
+/************************/
+
+
+/************************
+ * 查看更多按钮设置
+ */
+
+.check_more {
+	display: block;
+	padding-top: 12px;
+	width: 200px;
+	height: 45px;
+	background: rgb(97, 176, 255);
+	border: rgb(97, 176, 255) 1px solid;
+	border-radius: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+	.check_more {
+		display: none;
+	}
+}
+
+.check_more:hover {
+	color: white;
+	background: #2AABD2;
+}
+
+
+/*************************/
+
+
+/************************
+ * 设置div下p中的文字居中
+ */
+
+.words {
+	text-align: center;
+}
+
+.text_center {
+	text-align: center;
+}
+
+
+/************************/
+
+
+/***********************
+ * a的文字设置成白色
+ */
+
+.white_words {
+	color: white;
+}
+
+
+/************************/
+
+
+/************************
+ * 头部导航条样式
+ */
+
+.header_top {
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	position: fixed;
+	height: 70px;
+	width: 100%;
+	background: #333333;
+	padding-left: 30px;
+}
+
+.header_top>div {
+	float: left;
+}
+
+.header_nav {
+	padding-left: 40px;
+}
+
+.header_nav>.header_left>ul>li>a,
+.header_nav>.header_right>ul>li>a {
+	font-size: 15px;
+	width: 70px;
+	height: 70px;
+	color: white;
+	padding-top: 24px;
+	padding-left: 20px;
+}
+
+.logo {
+	display: block;
+	padding-top: 17px;
+}
+
+.logo img {
+	height: 40px;
+	width: 110px;
+}
+
+.header_nav>.header_left>ul>li,
+.header_nav>.header_right>ul>li {
+	float: left;
+}
+
+.header_left {
+	float: left;
+}
+
+.header_right {
+	float: right;
+}
+
+.active {
+	background: black;
+}
+
+@media only screen and (max-width: 992px) {
+	.header_nav {
+		display: none;
+	}
+}
+
+
+/*************************/
+
+
+/************************
+ * 隐藏的导航条的样式设置
+ */
+
+#doc,
+#about {
+	cursor: pointer;
+}
+
+#doc-slide,
+#about-slide {
+	height: 180px;
+	width: 100%;
+	background: #222;
+	display: none;
+	position: absolute;
+	z-index: 99;
+	top: 70px;
+}
+
+#about-slide {
+	height: 220px;
+}
+
+#doc-slide a,
+#about-slide a {
+	padding-top: 10px;
+}
+
+#doc-slide a:hover,
+#about-slide a:hover {
+	color: #777777;
+}
+
+.slide_word_color {
+	color: #848484;
+	font-size: 12px;
+}
+
+.title {
+	color: white;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+
+/*************************/
+
+
+/************************ 
+ *其它登陆方式 
+ */
+
+.other_way {
+	width: 100%;
+	height: 50px;
+	margin-top: 20px;
+}
+
+.other_way>div {
+	border-radius: 50%;
+	float: left;
+	overflow: hidden;
+	margin-right: 5px;
+}
+
+.other_way>.twitter_icon {
+	background: #389eff;
+}
+
+.other_way>.wechat_icon {
+	background: #00bc01;
+}
+
+.other_way>.goole_icon {
+	background: #f43934;
+}
+
+.other_way>.facebook_icon {
+	background: #314f98;
+}
+
+.other_way>div>a {
+	width: 26px;
+	height: 26px;
+	padding-top: 5px;
+	padding-left: 6px;
+	color: white;
+	display: block;
+}
+
+
+/************************/
+
+
+/************************
+ * 登录注册页面
+ */
+
+.close a {
+	display: block;
+	padding: 50px;
+}
+
+.logo_box {
+	width: 200px;
+	height: 130px;
+	text-align: center;
+	float: left;
+}
+
+.btn-group {
+	float: right;
+	height: 70px;
+	padding-top: 20px;
+	padding-right: 50px;
+}
+
+@media only screen and (min-width: 993px) {
+	.btn-group {
+		display: none;
+	}
+	.logo_box {
+		margin-left: 70px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.header_top>.btn-group {
+		float: right;
+	}
+}
+
+input {
+	padding: 4px;
+	margin-bottom: 10px;
+	display: block;
+	border: 1px solid #5b5b5b !important;
+	color: #cccccc !important;
+	border-radius: 5px;
+	background: #383838;
+}
+
+input,
+label {
+	width: 100%;
+}
+
+label p {
+	font-weight: normal;
+}
+
+.remember {
+	float: left;
+	width: 17px;
+	height: 17px;
+}
+
+.highlight_btu {
+	background: #e4e4e4;
+	color: black !important;
+}
+
+.highlight_border {
+	border: 1px solid white !important;
+}
+
+
+/***********************/
+
+
+/*
+ * 右侧栏
+ */
+
+.right_nav_bar {
+	position: fixed;
+	right: 0;
+	top: 45%;
+	z-index: 10001;
+	list-style: outside none none;
+	width: 54px;
+	background: #31353d;
+}
+
+.right_nav_bar .icons {
+	height: 54px;
+	width: 54px;
+	float: left;
+	position: absolute;
+	right: 0;
+	transition: all 0.3s ease 0s;
+	overflow: hidden;
+	background: rgb(62, 163, 255);
+}
+
+.right_nav_bar .icons:hover {
+	width: 128px;
+}
+
+.right_nav_bar i.icon {
+	font-size: 30px;
+	color: #fff;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.right_nav_bar span.tips {
+	padding-right: 8px;
+	color: #fff;
+	position: relative;
+	top: 17px;
+	float: right;
+	font-size: 16px;
+}
+
+.right_nav_bar .phone_icon {
+	top: 54px;
+}
+
+.right_nav_bar .lesson_icon {
+	top: 108px;
+}
+
+.right_nav_bar .WeChat {
+	top: 162px;
+}
+
+.phone_icon:hover,
+.lesson_icon:hover,
+.WeChat:hover {
+	background: rgb(62, 163, 255)!important;
+}
+
+.WeChat {
+	height: 54px;
+	width: 54px;
+	float: left;
+	position: absolute;
+	right: 0;
+	transition: all 0.3s ease 0s;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 992px) {
+	.right_nav_bar {
+		display: none;
+	}
+}
+
+
+/**********************/
+
+
+/*
+ * 回到顶部按钮
+ */
+
+.go_to_top {
+	float: right;
+	margin-top: 40px;
+	margin-right: 2px;
+}
+
+#to_top {
+	width: 50px;
+	height: 50px;
+	display: block;
+	background: url(../../img/icons/totop.png) center no-repeat #F0F0F0;
+	border: 1px solid #d5d7ca;
+}
+
+#to_top:hover {
+	background: url(../../img/icons/totop.png) center no-repeat #EBEBEB;
+}
+
+
+/*********************/
