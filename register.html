@@ -214,7 +214,9 @@
 						var vm =this;
 						if(vm.answernecessary == -1 && vm.passwordPassnecessary == false 
 						   && vm.passwordnecessary == false && vm.emailnecessary == -1){
-						   console.log("您修改后的参数为：", JSON.stringify(vm.form) );
+						   alert("您修改后的参数为：", JSON.stringify(vm.form) );
+						}else{
+						   alert("请正确填写信息")
 						}
 					},
 					reset: function(){
