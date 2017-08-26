@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/mycss/public.css" />
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my-js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/vue.js" charset="utf-8"></script>
+	</head>
+	<style type="text/css">
+		@media only screen and (max-width: 992px) {
+			.main {
+				width: 100%;
+			}
+			.close {
+				display: none;
+			}
+		}
+		
+		@media only screen and (min-width: 993px) {
+			.main {
+				width: 35%;
+				margin-top: 100px;
+				margin-left: 380px;
+			}
+		}
+	</style>
+
+	<body style="background: #383838;">
+		<div class="login_box" id="login_box">
+			<div class="close">
+				<a href="index.html"><span class="glyphicon glyphicon-remove" style="font-size: 44px; color: white;"></span></a>
+			</div>
+			<div class="container">
+				<div class="row" style="padding: 30px;">
+					<div class="main">
+						<div class="logo_box">
+							<img style="width: 150px; height: 57px;" src="img/icons/logo.png" />
+							<p style="color: #cccccc">从这里开始建站之旅</p>
+						</div>
+						<div class="btn-group">
+							<a href="" class="btn btn-default" style="background: #383838; border: 0;"><span class="glyphicon glyphicon-align-justify" style="color: white;"></span></a>
+						</div>
+						<form style="color: white;">
+							<label>
+								<p>邮箱</p>
+								<input class="email" type="text" v-model="form.email" v-on:blur="emailBlur"/>
+								<div v-bind:class="{ email_necessary }" v-if="emailnecessary === 0">此项必须填写</div>
+								<div v-bind:class="{ email_necessary }" v-else-if="emailnecessary === 1">邮箱格式错误</div>
+							</label>
+							<label>
+								<p>密码</p>
+								<input class="password" type="password" v-model="form.password" v-on:blur="passwordBlur" @keyup.enter="login"/>
+								<div :class="{ password_necessary }" v-text="password_necessary" v-show="passwordnecessary ===0"></div>
+								<div :class="{ password_necessary }" v-show="passwordnecessary === 1">不能少于6个字符</div>
+							</label>
+							<div class="clearfix"></div>
+							<input class="remember" type="checkbox" />
+							<p style="padding-left: 30px; padding-top: 1px;">记住我（请在私人电脑上使用此功能）</p>
+							<hr />
+							<input class="login highlight_btu" type="button" value="登录" @click="login"/>
+							<input class="register highlight_border" type="button" value="注册" @click="register"/>
+							<div class="other_way">
+								<p style="float: left;">其他账号登录：</p>
+								<div class="twitter_icon">
+									<a class="icon-twitter" href=""></a>
+								</div>
+								<div class="wechat_icon">
+									<a class="icon-comments" href=""></a>
+								</div>
+								<div class="goole_icon">
+									<a class="icon-google-plus" href=""></a>
+								</div>
+								<div class="facebook_icon">
+									<a class="icon-facebook" href=""></a>
+								</div>
+							</div>
+							<p style="float: right;">
+								<a href="">忘记密码？点这里找回</a>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var myreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+			let vm = new Vue({
+				el: '#login_box',
+				data: {
+					login_html: "登录",
+					email_necessary: "此项必须填写",
+					password_necessary: "此项必须填写",
+					emailnecessary: -1,
+					passwordnecessary: -1,
+					form: {
+						email: "",
+						password: ""
+					}
+				},
+				mounted() {
+					this.checkRemember();
+				},
+				methods:{
+					checkRemember: function () {
+						var email = localStorage.getItem('username', email); 
+						var password = localStorage.getItem('password', password);
+						if(email &&　password) {
+							this.form.email = email;
+							this.form.password = password;
+							$('.remember').prop('checked', true);
+						}
+					},
+					emailBlur: function () {
+						let email = this.form.email;
+						if(email == ""){
+							this.emailnecessary = 0;//0代表没有输入
+						}else if(!myreg.test(email)){
+							this.emailnecessary = 1;//1代表答案错误
+						}else {
+							this.emailnecessary = -1;
+						}
+					},
+					passwordBlur: function () {
+						let password = this.form.password;
+						if(password == ""){
+							this.passwordnecessary = 0;//0代表没有输入
+						}else if(password.trim().length < 6){
+							this.passwordnecessary = 1;//1代表输入密码少于6位数
+						}else{
+							this.passwordnecessary = -1;
+						}
+					},
+					login:function(){
+						this.emailBlur();
+						this.passwordBlur();
+						if(this.emailnecessary == -1 && this.passwordnecessary == -1){
+							window.location.href = 'http://127.0.0.1:8020/%E8%B5%B7%E9%A3%9E%E9%A1%B512/index.html'
+						}
+					},
+					register:function(){
+						window.location.href = 'http://127.0.0.1:8020/%E8%B5%B7%E9%A3%9E%E9%A1%B512/register.html'
+					}
+				}
+			})
+			
+			$('.remember').change(function() {
+				if($(this).is(':checked')){
+					var email = $('.email').val();
+					var password = $('.password').val();
+					var date = new Date();
+					date.setDate(date.getDate() + 10);
+					localStorage.setItem('username', email); 
+					localStorage.setItem('password', password);
+				}else{
+					localStorage.removeItem('username', email); 
+					localStorage.removeItem('password', password);
+				}
+			})
+		</script>
+	</body>
+
+</html>
